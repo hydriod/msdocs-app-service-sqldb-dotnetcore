@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,5 +15,7 @@ namespace DotNetCoreSqlDb.Data
         }
 
         public DbSet<DotNetCoreSqlDb.Models.Todo> Todo { get; set; } = default!;
+        public DbSet<DotNetCoreSqlDb.Models.BBResponse> BBResponse { get; set; } = default!;
+        public DbSet<DotNetCoreSqlDb.Models.BBThread> BBThread { get; set; } = default!;
     }
 }

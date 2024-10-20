@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm
 
+RUN dotnet tool install -g dotnet-aspnet-codegenerator
+
 # Install SQL Tools: SQLPackage and sqlcmd
 COPY mssql/installSQLtools.sh installSQLtools.sh
 RUN bash ./installSQLtools.sh \
